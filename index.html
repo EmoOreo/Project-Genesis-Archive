@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#071015" />
+  <title>Project Genesis: Archive</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero-panel">
+      <div>
+        <p class="eyebrow">SANCTUARY ONE // TUNDRA NODE ALPHA</p>
+        <h1>Project Genesis: Archive</h1>
+        <p class="tagline">Discover life. Register species. Rebuild the Archive.</p>
+      </div>
+      <div class="status-pill">ARCHIVE LINK: ACTIVE</div>
+    </section>
+
+    <section class="grid">
+      <aside class="panel controls">
+        <h2>Expedition Console</h2>
+        <p class="muted">Manual expeditions generate Knowledge. Knowledge funds scans, reconstructions, and archive expansion.</p>
+        <button id="scanBtn" class="primary">Begin Biome Scan</button>
+        <button id="registerBtn">Register Next Species</button>
+        <div class="resource-box"><span>Knowledge</span><strong id="knowledge">0</strong></div>
+        <div class="resource-box"><span>Auto Research / sec</span><strong id="perSecond">0</strong></div>
+        <div class="resource-box"><span>Species Registered</span><strong id="registered">0 / 0</strong></div>
+      </aside>
+
+      <section class="vista panel">
+        <div class="aurora"></div><div class="sun"></div><div class="mountains"></div><div class="field"></div><div class="herd">𐂂 𐂂 𐂂</div>
+        <div class="plinth">ARCHIVE PLINTH // USI GLYPH MATRIX ONLINE</div>
+      </section>
+
+      <aside class="panel upgrades">
+        <h2>Research Systems</h2>
+        <div id="upgrades"></div>
+      </aside>
+    </section>
+
+    <section class="panel filters">
+      <h2>Archive Index</h2>
+      <div class="filter-row">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="Extinct">Extinct</button>
+        <button class="chip" data-filter="Extant">Extant</button>
+        <button class="chip" data-filter="Canidae">Canidae</button>
+        <button class="chip" data-filter="DRM">DRM</button>
+      </div>
+    </section>
+
+    <section id="archive" class="archive-grid"></section>
+
+    <footer class="footer">
+      <button id="saveBtn">Save</button>
+      <button id="resetBtn" class="danger">Reset Local Save</button>
+      <span>v0.1.0 Foundation // Local browser save only</span>
+    </footer>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
