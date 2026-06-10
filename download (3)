@@ -1,6 +1,0 @@
-[
-  {"id":"research_assistant","name":"Research Assistant","description":"Adds +1 Knowledge per second.","baseCost":50,"knowledgePerSecond":1},
-  {"id":"archive_scanner","name":"Archive Scanner","description":"Adds +5 Knowledge per second.","baseCost":220,"knowledgePerSecond":5},
-  {"id":"reconstruction_lattice","name":"Reconstruction Lattice","description":"Adds +18 Knowledge per second.","baseCost":900,"knowledgePerSecond":18},
-  {"id":"warden_cell_relay","name":"Warden Cell Relay","description":"Adds +55 Knowledge per second.","baseCost":3200,"knowledgePerSecond":55}
-]
