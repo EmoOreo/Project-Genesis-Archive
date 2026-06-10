@@ -1,47 +1,35 @@
-# Roadmap
+# Project Genesis: Archive Roadmap
 
 ## v0.1.0 Foundation
+Complete.
 
-- Static browser app
-- Local save
-- Species JSON
-- Habitat JSON
-- Upgrade JSON
-- Archive cards
-- Manual scan loop
-- Auto research upgrades
-- Mobile-friendly layout
+## v0.2.0 Expedition & Discovery
+Complete in this package.
 
-## v0.2.0 Archive Expansion
-
-- 100 starter species
-- Collection bonuses
-- Taxonomic collection groups
+- Species portraits
+- Habitat selection
 - Habitat unlocks
-- Discovery feed
-- Basic offline progress
+- Discovery registration
+- Collection progress
 
-## v0.3.0 Sanctuary Systems
+## v0.3.0 Collection Sets
 
-- Sanctuary node map
-- Expedition assignments
-- Warden events
-- Reconstruction tiers
-- Species rarity balancing
+- Taxonomic sets
+- Era sets
+- Habitat sets
+- Completion bonuses
+- Discovery log
 
-## v0.4.0 Project Genesis Integration
+## v0.4.0 Tree of Life View
 
-- Shared species schema
-- DRM trait hooks
-- Exportable archive database
-- Observatory compatibility notes
+- Visual taxonomic branches
+- Extant/extinct/reconstructed branches
+- Archive-cyan lineage paths
+- Sanctuary amber active-life nodes
 
-## v1.0.0 Playable Release Target
+## v0.5.0 Reconstruction Layer
 
-- Polished mobile UI
-- 250+ species
-- Era progression
-- Collection milestones
-- Offline progress
-- Save import/export
-- GitHub Pages/Vercel deployment ready
+- Fossil fragments
+- DNA fragments
+- Extinct reconstruction queue
+- Ethical review flags

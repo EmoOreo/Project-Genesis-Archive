@@ -11,9 +11,9 @@
   <main class="shell">
     <section class="hero-panel">
       <div>
-        <p class="eyebrow">SANCTUARY ONE // TUNDRA NODE ALPHA</p>
+        <p class="eyebrow">PROJECT GENESIS // ARCHIVE v0.2.0</p>
         <h1>Project Genesis: Archive</h1>
-        <p class="tagline">Discover life. Register species. Rebuild the Archive.</p>
+        <p class="tagline">Discover life. Register species. Rebuild the Archive across deep time.</p>
       </div>
       <div class="status-pill">ARCHIVE LINK: ACTIVE</div>
     </section>
@@ -21,17 +21,26 @@
     <section class="grid">
       <aside class="panel controls">
         <h2>Expedition Console</h2>
-        <p class="muted">Manual expeditions generate Knowledge. Knowledge funds scans, reconstructions, and archive expansion.</p>
-        <button id="scanBtn" class="primary">Begin Biome Scan</button>
-        <button id="registerBtn">Register Next Species</button>
+        <p class="muted">Select a habitat, scan the sanctuary node, then register species into the Archive.</p>
+        <label for="habitatSelect">Active Habitat</label>
+        <select id="habitatSelect"></select>
+        <button id="scanBtn" class="primary">Begin Habitat Scan</button>
+        <button id="registerBtn">Register Discovery</button>
+        <button id="unlockHabitatBtn" class="secondary">Unlock Selected Habitat</button>
         <div class="resource-box"><span>Knowledge</span><strong id="knowledge">0</strong></div>
         <div class="resource-box"><span>Auto Research / sec</span><strong id="perSecond">0</strong></div>
         <div class="resource-box"><span>Species Registered</span><strong id="registered">0 / 0</strong></div>
+        <div class="resource-box"><span>Archive Completion</span><strong id="completion">0%</strong></div>
       </aside>
 
       <section class="vista panel">
-        <div class="aurora"></div><div class="sun"></div><div class="mountains"></div><div class="field"></div><div class="herd">𐂂 𐂂 𐂂</div>
-        <div class="plinth">ARCHIVE PLINTH // USI GLYPH MATRIX ONLINE</div>
+        <img id="habitatImage" alt="Selected habitat scene" />
+        <div class="vista-overlay">
+          <p class="eyebrow" id="habitatCode">SANCTUARY NODE</p>
+          <h2 id="habitatName">Northern Reach Tundra</h2>
+          <p id="habitatDesc">Amber sanctuary light under cyan archive telemetry.</p>
+        </div>
+        <div id="discoveryPanel" class="discovery-panel hidden"></div>
       </section>
 
       <aside class="panel upgrades">
@@ -40,14 +49,20 @@
       </aside>
     </section>
 
+    <section class="panel progress-panel">
+      <div class="section-head"><h2>Collection Progress</h2><span id="progressSummary"></span></div>
+      <div id="habitatProgress" class="habitat-progress"></div>
+    </section>
+
     <section class="panel filters">
       <h2>Archive Index</h2>
       <div class="filter-row">
         <button class="chip active" data-filter="all">All</button>
         <button class="chip" data-filter="Extinct">Extinct</button>
         <button class="chip" data-filter="Extant">Extant</button>
+        <button class="chip" data-filter="Recently Extinct">Recently Extinct</button>
         <button class="chip" data-filter="Canidae">Canidae</button>
-        <button class="chip" data-filter="DRM">DRM</button>
+        <button class="chip" data-filter="Legendary">Legendary</button>
       </div>
     </section>
 
@@ -56,7 +71,7 @@
     <footer class="footer">
       <button id="saveBtn">Save</button>
       <button id="resetBtn" class="danger">Reset Local Save</button>
-      <span>v0.1.0 Foundation // Local browser save only</span>
+      <span>v0.2.0 Expedition & Discovery // Local browser save only</span>
     </footer>
   </main>
   <script src="main.js"></script>
